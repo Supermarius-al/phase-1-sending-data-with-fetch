@@ -69,6 +69,26 @@
       "dogName": "Byron",
       "dogBreed": "Poodle",
       "id": 14
+    },
+    {
+      "dogName": "Byron",
+      "dogBreed": "Poodle",
+      "id": 15
+    },
+    {
+      "dogName": "Byron",
+      "dogBreed": "Poodle",
+      "id": 16
+    },
+    {
+      "dogName": "Byron",
+      "dogBreed": "Poodle",
+      "id": 17
+    },
+    {
+      "dogName": "Byron",
+      "dogBreed": "Poodle",
+      "id": 18
     }
   ],
   "cats": [
@@ -86,8 +106,46 @@
   "users": [
     {
       "name": "malban",
-      "email": "malban2982yahoo.com",
+      "email": "malban298@yahoo.com",
       "id": 1
+    },
+    {
+      "name": "joe",
+      "email": "joe98@gmail.com",
+      "id": 2
+    },
+    {
+      "name": {
+        "isTrusted": true
+      },
+      "id": 3
+    },
+    {
+      "name": {
+        "isTrusted": true
+      },
+      "id": 4
+    },
+    {
+      "name": {
+        "isTrusted": true
+      },
+      "id": 5
+    },
+    {
+      "name": {
+        "isTrusted": true
+      },
+      "id": 6
+    },
+    {
+      "id": 7
+    },
+    {
+      "name": {
+        "isTrusted": true
+      },
+      "id": 8
     }
   ],
   "robots": [
