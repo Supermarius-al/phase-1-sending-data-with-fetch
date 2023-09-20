@@ -19,17 +19,21 @@ function submitData(userName, userEmail) {
     },
     body: JSON.stringify(formData),
   };
- fetch("http://localhost:3000/users", configurationObject)
+  return fetch("http://localhost:3000/users", configurationObject)
     .then((res) => res.json())
     .then((data) => {
       console.log(data.id);
       JSON.stringify(data.id);
     });
-}.catch(function (error) {
-alert("Unauthorized Access");
-    console.log(error.message);
-  }).then((data) => {
-      return fetch("http://localhost:3000/users", {
+}
+
+//  .catch(function (error) {
+//   alert("Unauthorized Access");
+//     console.log(error.message);
+//   });
+
+/*   .then((data) => {
+      fetch("http://localhost:3000/users", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -38,12 +42,14 @@ alert("Unauthorized Access");
         body: JSON.stringify({
           data: data.id,
         }),
-      })
+      });
     })
-    .then((res) => res.json())
+    .then((res) => res.json());
+}
 
 /*
-data.id;
+
+//data.id;
 //.then((res) => res.json())
 //.then((res) => JSON.stringify(res));
 */
