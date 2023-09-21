@@ -23,14 +23,16 @@ function submitData(userName, userEmail) {
     .then((res) => res.json())
     .then((data) => {
       console.log(data.id);
-      JSON.stringify(data.id);
+      template.innerHTML = data.id;
+      document.body.appendChild(template);
+    })
+    .catch(function (error) {
+      template.innerHTML = error.message;
+      document.body.appendChild(template);
     });
 }
 
-//  .catch(function (error) {
-//   alert("Unauthorized Access");
-//     console.log(error.message);
-//   });
+submitData("marius", "marius@marius.com");
 
 /*   .then((data) => {
       fetch("http://localhost:3000/users", {
